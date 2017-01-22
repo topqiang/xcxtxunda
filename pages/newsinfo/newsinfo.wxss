@@ -1,0 +1,9 @@
+/* pages/newsinfo/newsinfo.wxss */
+.liud{
+    padding-left: 10rpx;
+}
+.liud::before{
+    content: '·';
+    font-size: 30rpx;
+    color: #3B93DE;
+}

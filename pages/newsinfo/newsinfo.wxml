@@ -1,0 +1,19 @@
+<!--pages/newsinfo/newsinfo.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="pad20 texovh">
+<text class="">{{news_info.title}}</text>
+<view class="fs-12">{{news_info.author}} | {{news_info.ctime}}</view>
+</view>
+<view class="fs-14 lh20 pad0-20 marb20">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class="indexlc">
+    <view class="loctitle pad0-20">
+    相关资讯
+    </view>
+    <view class="pad0-20">
+        <view class="lh20 fs-14 liud texovh" wx:for="{{news_list}}" wx:for-item="obj" wx:key="*this" bindtap="newsTap" data-id="{{obj.news_id}}">
+            {{obj.title}}
+        </view>
+    </view>
+</view>

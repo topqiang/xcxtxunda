@@ -1,0 +1,16 @@
+<view class="indexlc">
+    <view class="goodlist texcen lh20">
+        <view class="good fs-12" wx:for="{{project_list}}" wx:for-item="project" wx:key="{{*this}}" data-id="{{project.p_id}}" bindtap="goodTap">
+            <image class="goodimg" src="http://www.txunda.com/Uploads/pLogo/{{project.p_logo}}" mode="aspectFill"></image>
+            <view>
+                <text>{{project.p_name}}</text>
+                <view class="haround">
+                    <view class="wid50 bor1dc">{{project.p_type}}</view>
+                    <view class="wid50">
+                        <image class="yanj" src="../../img/yanj.png"></image>{{project.read_num}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

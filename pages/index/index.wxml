@@ -1,0 +1,104 @@
+<!--pages/index/index.wxml-->
+<swiper autoplay="true" indicator-dots="true" interval="2000" duration="1000">
+    <block wx:for="{{topimgs}}" wx:key="{{*this}}">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="indexlc">
+    <text class="loctitle">提供您所需要的完整服务</text>
+    <view class="lclist">
+        <view class="lc haround">
+            <view class="lcleft">
+                <image class="leimg" src="../../img/aution1.png" mode="aspectFit"></image>            
+                <text class="lctext">需求梳理&原型</text>
+            </view>
+            <view class="lcright vcenter">
+                <text>专业产品经理帮助您梳理项目需求，编写需求文档并制作产品原型。</text>
+            </view>
+        </view>
+        <view class="lc haround">
+            <view class="lcleft">
+                <image class="leimg" src="../../img/aution2.png" mode="aspectFit"></image>            
+                <text class="lctext">UI设计</text>
+            </view>
+            <view class="lcright vcenter">
+                <text>不同风格，不同专长的UI设计师为您设计产品界面，多套风格供您选择。</text>
+            </view>
+        </view>
+        <view class="lc haround">
+            <view class="lcleft">
+                <image class="leimg" src="../../img/aution3.png" mode="aspectFit"></image>            
+                <text class="lctext">程序开发</text>
+            </view>
+            <view class="lcright vcenter">
+                <text>经验丰富的开发者为您提供各种平台开发服务，专业项目经理管控研发流程，保障交付。</text>
+            </view>
+        </view>
+        <view class="lc haround">
+            <view class="lcleft">
+                <image class="leimg" src="../../img/aution4.png" mode="aspectFit"></image>            
+                <text class="lctext">产品测试</text>
+            </view>
+            <view class="lcright vcenter">
+                <text>专业测试工具，专属测试经理以及项目测试服务，给您的项目全面体检并出具专业报告。</text>
+            </view>
+        </view>
+        <view class="lc haround">
+            <view class="lcleft">
+                <image class="leimg" src="../../img/aution5.png" mode="aspectFit"></image>            
+                <text class="lctext">提交上线</text>
+            </view>
+            <view class="lcright vcenter">
+                <text>应用服务器环境搭建, android在各大应用市场上架, ios端在AppStore提交上架。</text>
+            </view>
+        </view>
+    </view>
+    <view class="vcolcen">
+        <text class="fs-12">当然，我们还提供报价服务！</text>
+        <button class="mybtn" size="mini" bindtap="callphone">免费评估您的项目费用</button>
+    </view>
+
+    <view class="indexlc">
+        <text class="loctitle">作品展示</text>
+        <view class="goodlist texcen lh20">
+            <view class="good fs-12" wx:for="{{project_list}}" wx:for-item="project" wx:key="{{*this}}" data-id="{{project.p_id}}" bindtap="goodTap">
+                <image class="goodimg" src="http://www.txunda.com/Uploads/pLogo/{{project.p_logo}}" mode="aspectFill"></image>
+                <view>
+                    <text>{{project.p_name}}</text>
+                    <view class="haround">
+                        <view class="wid50 bor1dc">{{project.p_type}}</view>
+                        <view class="wid50">
+                            <image class="yanj" src="../../img/yanj.png"></image>{{project.read_num}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+    <view class="indexlc" style="padding-bottom:30rpx;">
+        <text class="loctitle">客户赞不绝口</text>
+        <view class="haround">
+            <view class="assess pad5 vcolcen" wx:for="{{assess}}" wx:for-item="obj" wx:key="{{*this}}">
+                <text class="assesstext">"{{obj.text}}"</text>
+                <image class="assessimg" src="{{obj.imgsrc}}"></image>
+                <text>{{obj.name}}</text>
+                <text>{{obj.comname}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <view class="indexlc">
+        <text class="loctitle">媒体报道</text>
+        <view class="mecall hbetween" wx:for="{{news_list}}" wx:for-item="obj" wx:key="{{*this}}" bindtap="newsTap" data-id="{{obj.news_id}}">
+            <image class="mecallimg" src="http://www.txunda.com/Uploads/News/{{obj.pic}}" mode="aspectFill"></image>
+            <view class="mecallinfo">
+                <text class="title disib">{{obj.title}}</text>
+                <text class="content disib">{{obj.content}}</text>
+                <text class="info disib">{{obj.author}}|{{obj.ctime}}</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/faqinfo/faqinfo.wxml-->
+<view class="teamimg pore vcolcen fs-12">
+	<image class="img" src="../../img/team_top.jpg" mode="aspectFit"></image>
+	<view class="haround lh20">
+        <view style="margin-right:20rpx;">
+            <view>您只需要告诉我们您的创意</view>
+            <view>剩下的将交由我们为您完成</view>
+        </view>
+        <button class="thisbtn disib fs-12" bindtap="callphone">联系我们</button>
+    </view>
+</view>
+<view class="indexlc lh50">
+    <text class="loctitle">{{project_info.p_name}}</text>
+    <text class="fs-12">分类：{{project_info.p_type}}</text>
+</view>
+<view class="pad0-20 fs-14">{{project_info.p_info}}
+<block wx:for="{{pic_arr}}" wx:key="*this" wx:for-item="pic">
+<image class="gooimg" src="{{pic.src}}" style="height:{{pic.height}}rpx" mode="scaleToFill" bindtap="preview" data-src="{{pic.src}}"></image>
+</block>
+<view class="marb20">作品版权:天迅达科技有限公司解释，禁止匿名转载；禁止商业使用；禁止个人使用。 临摹作品，同人作品原型版权归天迅达所有。</view>
+</view>
+<view class="indexlc">
+    <view class="loctitle pad0-20">
+    推荐作品
+    </view>
+    <view class="goodlist texcen lh20">
+        <view class="good fs-12" wx:for="{{project_list}}" wx:for-item="project" wx:key="{{*this}}" data-id="{{project.p_id}}" bindtap="goodTap">
+            <image class="goodimg" src="https://www.txunda.com/Uploads/pLogo/{{project.p_logo}}" mode="aspectFill"></image>
+            <view>
+                <text>{{project.p_name}}</text>
+                <view class="haround">
+                    <view class="wid50 bor1dc">{{project.p_type}}</view>
+                    <view class="wid50">
+                        <image class="yanj" src="../../img/yanj.png"></image>{{project.read_num}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

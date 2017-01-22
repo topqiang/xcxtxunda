@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/case/case",
+    "pages/news/news",
+    "pages/faq/faq",
+    "pages/newsinfo/newsinfo",
+    "pages/faqinfo/faqinfo" 
+  ],
+  "window": {
+      "navigationBarBackgroundColor": "#000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "天迅达",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/fter1.png",
+      "selectedIconPath": "img/fter1on.png"
+    },{
+      "pagePath": "pages/case/case",
+      "text": "作品",
+      "iconPath": "img/fter2.png",
+      "selectedIconPath": "img/fter2on.png"
+    },{
+      "pagePath": "pages/faq/faq",
+      "text": "团队",
+      "iconPath": "img/fter3.png",
+      "selectedIconPath": "img/fter3on.png"
+    },{
+      "pagePath": "pages/news/news",
+      "text": "资讯",
+      "iconPath": "img/fter5.png",
+      "selectedIconPath": "img/fter5on.png"
+    }],
+    "color": "#ccc",
+    "selectedColor": "#eee",
+    "backgroundColor": "#000",
+    "position":"bottom"
+  },
+  "debug": true
+}

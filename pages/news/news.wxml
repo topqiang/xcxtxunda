@@ -1,0 +1,11 @@
+<!--pages/news/news.wxml-->
+<view>
+    <view class="mecall hbetween" wx:for="{{news_list}}" wx:for-item="obj" wx:key="{{*this}}" bindtap="newsTap" data-id="{{obj.news_id}}">
+        <image class="mecallimg" src="http://www.txunda.com/Uploads/News/{{obj.pic}}" mode="aspectFill"></image>
+        <view class="mecallinfo">
+            <text class="title disib">{{obj.title}}</text>
+            <text class="content disib">{{obj.content}}</text>
+            <text class="info disib">{{obj.author}}|{{obj.ctime}}</text>
+        </view>
+    </view>
+</view>

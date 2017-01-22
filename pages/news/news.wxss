@@ -1,0 +1,29 @@
+/* pages/news/news.wxss */
+.mecall{
+    padding: 20rpx;
+}
+.mecallimg{
+    width: 300rpx;
+    height: 280rpx;
+}
+.mecallinfo{
+    width: 400rpx;
+    font-size: 30rpx;
+    color:#777;
+}
+.title{
+    height: 80rpx;
+    color:#000;
+    line-height: 80rpx;
+    overflow: hidden;
+}
+.info{
+    height: 80rpx;
+    line-height: 80rpx;
+    overflow: hidden;
+}
+.content{
+    height: 120rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+}

@@ -1,0 +1,108 @@
+@import "/wxParse/wxParse.wxss";
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.haround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.hcenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hbetween{
+    display: flex;
+    justify-content: space-between;
+}
+.vcenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.vcolcen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.disib{
+    display: inline-block;
+}
+.loctitle{
+    padding-left: 20rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    color: #3B93DE;
+}
+.lh20{
+    line-height: 40rpx;
+}
+.lh50{
+    line-height: 100rpx;
+}
+.texcen{
+    text-align: center;
+}
+.fs-12{
+    font-size: 24rpx;
+}
+.fs-14{
+    font-size: 28rpx;
+}
+.mybtn{
+    background: #428bca;
+    color: #fff;
+    margin-top: 20rpx;
+    margin-bottom: 50rpx;
+}
+.pore{
+    position: relative;
+}
+.wid50{
+    width: 50%;
+}
+.pad5{
+    padding: 10rpx;
+}
+.pad20{
+    padding: 40rpx;
+}
+.pad0-20{
+    padding: 0rpx 40rpx;
+}
+.pad20-0{
+    padding: 40rpx 0rpx;
+}
+.bor1dc{
+    border-right: 2rpx solid #dcdcdc;
+}
+.bo1dc{
+    border: 2rpx solid #dcdcdc;
+}
+.yanj{
+    width: 30rpx;
+    height: 24rpx;
+}
+.col7{
+    color: #777;
+}
+.indexlc{
+    border-top: 10rpx solid #e1f6fe;
+}
+.fr{
+    float: right;
+}
+.marb20{
+    margin-bottom: 40rpx;
+}
+.texovh{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

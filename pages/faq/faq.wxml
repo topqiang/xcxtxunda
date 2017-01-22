@@ -1,0 +1,66 @@
+<!--pages/faq/faq.wxml-->
+<view>
+<view class="teamimg pore vcolcen fs-12">
+	<image class="img" src="../../img/team_top.jpg" mode="aspectFit"></image>
+	<text class="fs-14">欢迎来到我们的团队</text>
+	<text>WE ARE AN INNOVATIVE TEAM</text>
+	<text>a platform to promote the development of programmers</text>
+	<text>A place where dreams set sail</text>
+</view>
+<view class="boryb pore lh50 texcen fs-14">我们的服务</view>
+<view class="haround pad20-0">
+	<image class="icon" src="../../img/icon1.png"></image>
+	<image class="icon" src="../../img/icon2.png"></image>
+	<image class="icon" src="../../img/icon3.png"></image>
+	<image class="icon" src="../../img/icon4.png"></image>
+	<image class="icon" src="../../img/icon5.png"></image>	
+</view>
+<view class="teamimg pore vcolcen fs-12">
+	<image class="img" src="../../img/team2.jpg" mode="aspectFit"></image>
+	<text class="fs-14">没有旗鼓相当唯有独领风骚</text>
+	<text>WHAT ARE YOU WAITING FOR? COME ON</text>
+</view>
+<view class="boryb pore lh50 texcen fs-14">我们的优势</view>
+
+<view class="pad0-20">
+	<view class="luic bo1dc pad20 vcolcen">
+		<image src="http://m.txunda.com/Public/Wap/images/fuwu1.png" style="width:100rpx;height:100px;" mode="aspectFit"></image>
+		<view class="lh50">全面的前期策划</view>
+		<text class="fs-14 col7">"万事预则立，不预则废"，天迅达科技依托丰富的项目策划与开发经验，与客户进行良好的前期沟通使需求变得落地可行</text>
+	</view>
+	<view class="luic bo1dc pad20 vcolcen">
+		<image src="http://m.txunda.com/Public/Wap/images/fuwu2.png" style="width:100rpx;height:100px;" mode="aspectFit"></image>
+		<view class="lh50">高效的中期执行</view>
+		<text class="fs-14 col7">"天下武功，唯快不破",自主研发的WQAC项目管理系统让客户的参与度更强，让我们的开发变的更加透明和高效</text>
+	</view>
+	<view class="luic bo1dc pad20 vcolcen">
+		<image src="http://m.txunda.com/Public/Wap/images/fuwu3.png" style="width:100rpx;height:100px;" mode="aspectFit"></image>
+		<view class="lh50">全面的前期策划</view>
+		<text class="fs-14 col7">完善的项目开发文档让您维护和升级更加方便(需求说明书、系统结构图、数据库结构文档、API文档、项目开发日志)</text>
+	</view>
+</view>
+
+<view class="pore teamimg vcolcen fs-12">
+	<image class="img" src="../../img/team3.jpg" mode="aspectFit"></image>
+	<text class="fs-14">简单就是最终极的复杂</text>
+	<text>为了优化用户体验我们不断努力</text>
+</view>
+<view class="boryb pore lh50 texcen fs-14">我们的团队</view>
+<view class="pore vcolcen fs-12" style="height:372rpx;color:#fff;">
+	<image class="teaimg" src="../../img/team4.jpg" mode="aspectFit"></image>
+	<text class="fs-14">最优秀的码农/设计师/产品经理/悉数到位</text>
+	<text>等您翻牌</text>
+</view>
+<view class="boryb pore lh50 texcen fs-14">联系我们</view>
+<view class="fs-12 pad20 lh20" style="background:#576272;color:#fff;">
+	<view>天津天迅达科技有限公司</view>
+	<view>地址：天津市南开区华苑产业园榕苑路15号鑫茂科技园1号楼B座1809</view>
+	<view>邮编：300384</view>
+	<view>总机：022-60688296</view>
+	<view>投诉与建议：xem@txunda.com</view>
+	<view>人才招聘：hr@txunda.com</view>
+	<view>反馈建议：hello@txunda.com</view>
+	<view>客服电话：022-60688296</view>
+	<view>工作时间：周一到周六09:00-18:00</view>		
+</view>
+</view>

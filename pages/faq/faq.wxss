@@ -1,0 +1,39 @@
+/* pages/faq/faq.wxss */
+.teamimg{
+    height: 180rpx;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.img{
+    width: 750rpx;
+    height: 180rpx;
+    top: 0rpx;
+    left: 0rpx;
+    position: absolute;
+    z-index: -1;
+}
+.teaimg{
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+    width: 750rpx;
+    height: 372rpx;
+    z-index: -1;
+}
+.icon{
+    width: 100rpx;
+    height: 100rpx;
+}
+.boryb::after{
+    content: "";
+    position: absolute;
+    top: 70rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100rpx;
+    height:8rpx;
+    background:#f6701f;
+}
+.luic{
+    margin-bottom: 40rpx;
+}

@@ -1,0 +1,38 @@
+/* pages/faqinfo/faqinfo.wxss */
+.teamimg{
+    height: 180rpx;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.img{
+    width: 750rpx;
+    height: 180rpx;
+    top: 0rpx;
+    left: 0rpx;
+    position: absolute;
+    z-index: -1;
+}
+.gooimg{
+    width: 670rpx;
+}
+.thisbtn{
+    background: #428bca;
+    display: inline-block;
+    background:#428bca;
+    color:#fff;
+}
+.goodlist{
+    overflow: hidden;
+    margin-top:20rpx;
+}
+.good{
+    width: 330rpx;
+    border: 2rpx solid #dcdcdc;
+    margin-left: 30rpx;
+    float: left;
+    margin-bottom: 30rpx;
+}
+.goodimg{
+    width: 100%;
+    height: 200rpx;
+}
